@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: busy
+    run: gitea
   name: gitea-svc
 spec:
   ports:
@@ -11,5 +11,5 @@ spec:
     targetPort: 3000
     nodePort: 30002
   selector:
-    run: busy
+    run: gitea
   type: NodePort
